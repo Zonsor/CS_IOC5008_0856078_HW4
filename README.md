@@ -7,10 +7,12 @@
 * Windows10
 * 1x NVIDIA 1080ti
 ## Reproducing Submission
-To reproduce my submission without retraining, do the following steps:   
+To reproduce my submission, do the following steps:   
 #### 1. Install detectron2
   The uploaded files do not contain Detectron2. You should build Detectron2 first. If your OS is linux, follow [Detectron2](https://github.com/facebookresearch/detectron2) directly. If your OS is win10, you can follow the [Detectron2 on windows](https://github.com/conansherry/detectron2). And you also need to install full version of CUDA instead of cudatoolkit. After building Detectron2, place the files of this repository into Detectron2 main folder.
-#### 2. Prepare testing data
+#### 2. Prepare data
+#### 3. Download pretrained model
+#### 4. Inference
 ## Reference from GitHub
 [Detectron2](https://github.com/facebookresearch/detectron2)  
 [Detectron2 on windows](https://github.com/conansherry/detectron2)
