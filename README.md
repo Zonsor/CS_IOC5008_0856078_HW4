@@ -1,4 +1,6 @@
 # CS_IOC5008_0856078_HW4
+## Brief Introduction
+　The task of this homework is to do instance segmentation on Tiny PASCAL VOC dataset. There are 1349 training images and 100 test images in this dataset with 20 common object classes. I use detectron2 to train Mask R-CNN with a ResNext101 + FPN (feature pyramid networks) backbone. The result of mask mAP (IoU = 0.5) is 0.5229.
 ## Files Description
 * **demo.py:** This .py file is based on the Colab Notebook of Detecton2. It only contains the code of predicted part. After building, you can run this file to check whether Detectron2 can work or not.  
 * **HW3_train.py:** It contains training part and validation part. You can tune some hyperparameters here. Amd make sure the file path is modified correctly by you.  
@@ -7,6 +9,23 @@
 * Windows10
 * 1x NVIDIA 1080ti
 ## Reproducing Submission
+#### File path structure
+```
+Detrctron2
+  +- train_images
+  |  +- images
+  |  +- annotation
+  +- test_images
+  |  +- images
+  |  +- annotation
+  +- output
+  |  +- my pretrained model
+  +- ImageNet pretrained model
+  +- demo.py
+  +- HW4_train.py
+  +- HW4_test.py
+  +- submission files
+```
 To reproduce my submission, do the following steps:   
 #### 1. Install detectron2
 This repository do not contain Detectron2. You should build Detectron2 first. If your OS is linux, follow [Detectron2](https://github.com/facebookresearch/detectron2) directly. If your OS is win10, you can follow the [Detectron2 on windows](https://github.com/conansherry/detectron2). And you also need to install full version of CUDA instead of cudatoolkit. After building Detectron2, place the files of this repository into Detectron2 main folder.
